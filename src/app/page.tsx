@@ -4,6 +4,7 @@ import About from '../components/About';
 import Services from '../components/Services';
 import BeforeAfter from '../components/BeforeAfter';
 import ClinicGallery from '../components/ClinicGallery';
+import InvisalignSection from '../components/InvisalignSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <InvisalignSection />
         <BeforeAfter />
         <ClinicGallery />
         <WhyChooseUs />

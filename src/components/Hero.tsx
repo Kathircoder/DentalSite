@@ -35,8 +35,8 @@ export default function Hero() {
 
           <Reveal delay={0.35}>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
-              <a href="tel:+918072523346" className="btn btn-accent">
-                Call Now
+              <a href="https://www.thesheriffdental.com/testimonials/" className="btn btn-accent">
+                Book Now
               </a>
               <a href="#services" className="btn btn-outline">
                 Our Services <ArrowRight size={16} />

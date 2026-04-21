@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none" role="img" aria-label="Clear aligners illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EFF6FF"/>
+      <stop offset="0.55" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E0E7FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1040 320) rotate(155) scale(720 520)">
+      <stop stop-color="#2563EB" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tray" x1="640" y1="260" x2="1020" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#DBEAFE" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="18" result="blur"/>
+      <feOffset dy="18"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0706 0 0 0 0 0.1333 0 0 0 0 0.2431 0 0 0 0.18 0"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- Subtle tooth outline -->
+  <g opacity="0.22" transform="translate(0,10)">
+    <path
+      d="M520 320c0-86 70-156 156-156h248c86 0 156 70 156 156v104c0 148-106 248-192 248-52 0-78-38-88-92-8-44-26-66-64-66s-56 22-64 66c-10 54-36 92-88 92-86 0-192-100-192-248V320Z"
+      stroke="#2563EB"
+      stroke-width="10"
+      stroke-linejoin="round"
+      fill="none"
+      filter="url(#soft)"
+    />
+  </g>
+
+  <!-- Clear aligner tray (stylized) -->
+  <g filter="url(#shadow)">
+    <path
+      d="M610 350c12-60 72-104 136-104h308c64 0 124 44 136 104l26 132c18 92-50 176-144 176H728c-94 0-162-84-144-176l26-132Z"
+      fill="url(#tray)"
+      stroke="#2563EB"
+      stroke-opacity="0.24"
+      stroke-width="6"
+    />
+
+    <!-- Inner ridge -->
+    <path
+      d="M670 380c10-40 54-70 104-70h244c50 0 94 30 104 70l18 86c14 64-34 124-102 124H754c-68 0-116-60-102-124l18-86Z"
+      fill="#FFFFFF"
+      fill-opacity="0.55"
+      stroke="#93C5FD"
+      stroke-opacity="0.7"
+      stroke-width="4"
+    />
+
+    <!-- Tooth cell hints -->
+    <g opacity="0.45" stroke="#60A5FA" stroke-width="3">
+      <path d="M740 355v240"/>
+      <path d="M800 345v260"/>
+      <path d="M860 340v270"/>
+      <path d="M920 338v274"/>
+      <path d="M980 340v270"/>
+      <path d="M1040 345v260"/>
+      <path d="M1100 355v240"/>
+    </g>
+
+    <!-- Highlights -->
+    <path
+      d="M700 330c30-34 72-54 118-54h220c46 0 88 20 118 54"
+      stroke="#FFFFFF"
+      stroke-opacity="0.9"
+      stroke-width="10"
+      stroke-linecap="round"
+    />
+    <circle cx="1240" cy="300" r="10" fill="#2563EB" fill-opacity="0.22"/>
+    <circle cx="1210" cy="330" r="6" fill="#2563EB" fill-opacity="0.18"/>
+  </g>
+
+  <!-- Accent bubbles -->
+  <g opacity="0.25">
+    <circle cx="360" cy="250" r="140" fill="#DBEAFE"/>
+    <circle cx="320" cy="640" r="180" fill="#E0E7FF"/>
+    <circle cx="1320" cy="690" r="160" fill="#DBEAFE"/>
+  </g>
+</svg>

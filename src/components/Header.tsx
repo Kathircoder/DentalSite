@@ -57,8 +57,12 @@ export default function Header() {
               {label}
             </a>
           ))}
-          <a href="tel:+918072523346" className="btn btn-accent" style={{ padding: '0.6rem 1.4rem', fontSize: '0.875rem' }}>
-            Call Now
+          <a
+            href="https://www.thesheriffdental.com/testimonials/"
+            className="btn btn-accent"
+            style={{ padding: '0.6rem 1.4rem', fontSize: '0.875rem' }}
+          >
+            Book Now
           </a>
         </nav>
       </div>
