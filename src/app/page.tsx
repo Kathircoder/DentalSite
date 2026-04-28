@@ -14,10 +14,10 @@ export default function Home() {
     <>
       <Header />
       <main>
+        <InvisalignSection />
         <Hero />
         <About />
         <Services />
-        <InvisalignSection />
         <BeforeAfter />
         <ClinicGallery />
         <WhyChooseUs />
